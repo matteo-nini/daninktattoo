@@ -22,7 +22,7 @@ Scritto seguendo [Ponytail](https://github.com/dietrichgebert/ponytail): la modi
                            │ crea sessione              │ webhook firmato
                            ▼                            │
                      Stripe Checkout ───────────────────┘
- Browser ── iframe (solo al clic) ──▶ Cal.diy su VPS (cal.daniktattoo.it)
+ Browser ── iframe (solo al clic) ──▶ Cal.diy su VPS (cal.daninktattoo.it)
 ```
 
 ## File
@@ -92,7 +92,7 @@ Lo **stato** della gift card non è salvato: si calcola da saldo e scadenza (`st
 
 [Cal.diy](https://github.com/calcom/cal.diy) è la versione comunitaria MIT di Cal.com. Richiede **PostgreSQL** (+ Redis) e un'app Next.js pesante: l'hosting condiviso SiteGround offre MySQL e risorse limitate, quindi **non ci sta**. Soluzione:
 
-- **Consigliata**: piccolo VPS (2 GB RAM) con il `docker-compose.yml` ufficiale di Cal.diy, su `cal.daniktattoo.it`.
+- **Consigliata**: piccolo VPS (2 GB RAM) con il `docker-compose.yml` ufficiale di Cal.diy, su `cal.daninktattoo.it`.
 - **Alternativa senza server**: account gratuito Cal.com; stesso codice, basta `CAL_ORIGIN=https://app.cal.com`.
 
 Il sito si integra solo tramite lo snippet di embed ufficiale (`public/app.js`), caricato **al clic**: nessuna richiesta a terzi finché la persona non apre il calendario. Cambiare provider = cambiare due variabili.

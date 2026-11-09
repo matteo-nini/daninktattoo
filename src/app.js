@@ -12,7 +12,7 @@ export function loadConfig(env = process.env) {
   const cfg = {
     port: Number(env.PORT ?? 3000),
     baseUrl: (env.BASE_URL ?? 'http://localhost:3000').replace(/\/$/, ''),
-    dbFile: resolve(ROOT, env.DB_FILE ?? 'data/daniktattoo.db'),
+    dbFile: resolve(ROOT, env.DB_FILE ?? 'data/daninktattoo.db'),
     uploadsDir: resolve(ROOT, env.UPLOADS_DIR ?? 'data/uploads'),
     trustProxy: env.TRUST_PROXY === '1',
     adminHash: env.ADMIN_PASSWORD_HASH ?? '',
