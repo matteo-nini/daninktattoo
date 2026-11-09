@@ -1,0 +1,20 @@
+{
+  "name": "daninktattoo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sito di Dani (DANINK): portfolio, gift card con pagamento Stripe, modulo contatti e prenotazioni Cal.diy.",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test",
+    "hash-password": "node scripts/hash-password.js"
+  },
+  "dependencies": {
+    "nodemailer": "^10.4.0"
+  }
+}
